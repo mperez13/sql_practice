@@ -1,18 +1,25 @@
--- Drop the table named Shippers in case there is one already craated.
-DROP TABLE Shippers;
+-- Drop table Categories
+DROP TABLE Categories;
 
--- Create a table name Shippers
-CREATE TABLE Shippers (
-  ShipperID int NOT NULL,
-  CompanyName varchar(255) NOT NULL,
-  Phone varchar(20)
-  CONSTRAINT PK_Shipper PRIMARY KEY (ShipperID)
+-- CREATE TABLE Categories
+CREATE TABLE Categories (
+  CategoryID int NOT NULL,
+  CategoryName varchar(50),
+  Description varchar(255),
+  Picture varchar(50),
+  PRIMARY KEY (CategoryID)
 )
--- Insert all all the entries for the table Shippers.
-INSERT INTO Shippers (ShipperID, CompanyName, Phone)
-VALUES (1,'Speedy Express', '(503) 555-9831'),
-  (2,'United Package','(503) 555-3199'),
-  (3,'Federal Shipping','(503) 555-9931');
 
--- Return all fields from all the shippers.
-SELECT * FROM Shippers;
+-- INSERT Entries to Table Categories
+INSERT INTO Categories(CategoryID, CategoryName,Description,Picture)
+Values (1, 'Beverages', 'Soft drinks, coffees, teas, beers, and ales', 'beverage.jpg'),
+(2, 'Condiments', 'Sweet and savory sauces, relishes, spreads, and seasonings', 'Condiments.jpg'),
+(3, 'Confections', 'Desserts, candies, and sweet breads', 'confections.jpg'),
+(4, 'Dairy Products', 'Cheeses', 'dairy.jpg'),
+(5,'Grains/Cereals','Bread, crackers, pasta, and cereal', 'grains.jpg'),
+(6,'Meat/Poultry','Prepared meats', 'meat.jpg'),
+(7,'Produce','Dried fruit and bean curd', 'produce.jpg'),
+(8,'Seafood','Seaweed and fish', 'fish.jpg');
+
+-- Return all from CategoryName and Description from Table Categories
+SELECT CategoryName, Description FROM Categories;
