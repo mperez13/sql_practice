@@ -1,0 +1,1 @@
+-- For each product show the associated Supplier. Show the ProductID, ProductName and the CompanyName of the Supplier. Sort by ProductID
