@@ -1,3 +1,3 @@
 -- Show how many customers are in the Customers table?
-SELECT count(*) AS 'Total Customers'
+SELECT count(customerID) AS 'Total Customers'
 FROM Customers;
