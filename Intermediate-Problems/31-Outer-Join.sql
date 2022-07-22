@@ -1,0 +1,1 @@
+-- Show only the customers who have never placed an order with Marget Peacock, employeID 4.
