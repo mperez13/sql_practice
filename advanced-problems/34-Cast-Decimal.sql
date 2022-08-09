@@ -1,5 +1,5 @@
 -- Change the query from #33 to use the discount when calculating high-value customers. Order by the total amount which includes the discount.
-SELECT c.CustomerID, c.CompanyName, cast(SUM(oD.UnitPrice*oD.Quantity-oD.Discount) AS DECIMAL(12,2)) AS TotalOrderAmount
+SELECT c.CustomerID, c.CompanyName, cast(SUM(oD.UnitPrice*oD.Quantity) AS DECIMAL(12,2)) AS TotalsWithoutDiscount, cast(SUM(oD.UnitPrice*oD.Quantity-oD.Discount) AS DECIMAL(12,2)) AS TotalOrderAmount
 FROM Customers c
 INNER JOIN Orders o ON o.CustomerID = c.CustomerID
 INNER JOIN OrderDetails oD ON oD.OrderID = o.OrderID
