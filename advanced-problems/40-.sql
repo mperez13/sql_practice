@@ -2,7 +2,24 @@
 /*
 SELECT OrderDetails.OrderID, ProductID, UnitPrice, Quantity, Discount
 FROM OrderDetails
-JOIN (SELECT OrderID FROM OrderDetails WHERE Quantity >=60 GROUP BY OrderID, Quantity Having Count(*) > 1)
+JOIN (
+SELECT OrderID 
+FROM OrderDetails 
+WHERE Quantity >=60 
+GROUP BY OrderID, Quantity 
+Having Count(*) > 1
+)
 PotentialProblemOrders ON PotentialProblemOrders.OrderID = OrderDetails.OrderID
 ORDER BY OrderID, ProductID
 */
+SELECT DISTINCT OrderDetails.OrderID, ProductID, UnitPrice, Quantity, Discount
+FROM OrderDetails
+JOIN (
+SELECT OrderID 
+FROM OrderDetails 
+WHERE Quantity >=60 
+GROUP BY OrderID, Quantity 
+Having Count(*) > 1
+)
+PotentialProblemOrders ON PotentialProblemOrders.OrderID = OrderDetails.OrderID
+ORDER BY OrderID, ProductID
