@@ -1,1 +1,0 @@
--- Change the query from #33 to use the discount when calculating high-value customers. Order by the total amount which includes the discount.
