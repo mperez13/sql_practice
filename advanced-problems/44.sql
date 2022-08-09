@@ -1,1 +1,0 @@
--- Fix the SQL from #43. Show the missing employee.
