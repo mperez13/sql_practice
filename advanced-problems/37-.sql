@@ -1,1 +1,0 @@
--- Show a random assortment of orders. Show a random set of 2% of all orders.
