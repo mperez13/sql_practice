@@ -1,1 +1,0 @@
--- Display high-value customers. High-value customers are those who've made at least 1 order with a total value (not including the discount) equal to $10,000 or more. Only display orders made in year 2016.
