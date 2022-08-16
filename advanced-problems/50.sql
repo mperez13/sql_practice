@@ -1,0 +1,1 @@
+-- Based on the query from #48,49, show all the defined CustomerGroups, and the percentage in each. Sort by the total in each group, in descending order.
