@@ -6,10 +6,11 @@ The customer grouping categories:
 over 10,000
 Order the results by CustomerID.
 */
-SELECT c.CustomerID, c.CompanyName, UnitPrice--, TotalOrderAmount, CustomerGroup
+SELECT o.CustomerID, c.CompanyName, SUM(UnitPrice*Quantity) AS TotalOrderAmount --, CustomerGroup
 FROM Customers c JOIN Orders o
 ON c.customerID = o.customerID
 JOIN OrderDetails oD
 ON o.OrderID = oD.OrderID
-WHERE Year(OrderDate) = 1998
-ORDER BY CustomerID;
+WHERE Year(o.OrderDate) = 1998
+GROUP BY o.CustomerID, c.CompanyName
+ORDER BY o.CustomerID;
