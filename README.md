@@ -1,4 +1,4 @@
-# SQL Practice Problems
+# SQL 
 
 - [Vasilik SQL Practice Problems][1]
 
