@@ -1,2 +1,2 @@
--- Return all from CategoryName and Description from Table Categories
-SELECT CategoryName, Description FROM Categories;
+-- #1 Return all the fields from all the shipper.
+SELECT * FROM Shippers;
