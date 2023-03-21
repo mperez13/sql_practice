@@ -1,4 +1,4 @@
--- Cut off decimal off at 2
+-- #47 Cut off decimal off at 2. Continuation from #46
 WITH AllOrders_CTE AS
 (
 SELECT employeeID, Count(employeeID) AS AllOrders
