@@ -1,4 +1,4 @@
--- Fix the SQL from #43. Show the missing employee
+-- #44 Fix the SQL from #43. Show the missing employee
 WITH AllOrders_CTE AS
 (
 SELECT employeeID, Count(employeeID) AS AllOrders
