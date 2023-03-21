@@ -1,3 +1,4 @@
+-- #49 Fix #48 so there are no NULLs in the results.
 SELECT o.CustomerID, c.CompanyName, SUM(UnitPrice*Quantity) AS TotalOrderAmount,
 CASE
 	WHEN SUM(UnitPrice*Quantity) <= 1000 THEN 'LOW'
