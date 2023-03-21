@@ -1,4 +1,4 @@
--- Show the percentage of late orders over total orders.
+-- #46 Show the percentage of late orders over total orders.
 WITH AllOrders_CTE AS
 (
 SELECT employeeID, Count(employeeID) AS AllOrders
