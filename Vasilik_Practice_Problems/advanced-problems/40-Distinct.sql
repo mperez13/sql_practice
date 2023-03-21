@@ -1,4 +1,4 @@
--- Another way of completing #39 is using a derived table as shown as the SQL below. Fix the error in the SQL.
+--#40 Another way of completing #39 is using a derived table as shown as the SQL below. Fix the error in the SQL.
 /*
 SELECT OrderDetails.OrderID, ProductID, UnitPrice, Quantity, Discount
 FROM OrderDetails
