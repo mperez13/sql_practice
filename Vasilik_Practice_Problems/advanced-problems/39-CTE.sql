@@ -1,4 +1,4 @@
--- Based on #39, show the details of the order, for orders that match the criteria for #39 problem.
+-- #39 Based on #39, show the details of the order, for orders that match the criteria for #38 problem.
 WITH DoubleEntries_CTE (OrderID, Quantity)
 AS(
 SELECT OrderID, Quantity
