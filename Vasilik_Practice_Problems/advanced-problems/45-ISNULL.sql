@@ -1,4 +1,4 @@
--- Fix the NULL in #43. Show 0 if answer is NULL
+-- #45 Fix the NULL in #43. Show 0 if answer is NULL
 WITH AllOrders_CTE AS
 (
 SELECT employeeID, Count(employeeID) AS AllOrders
